@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:layout_height="match_parent"
+    tools:context="com.example.niloychowdhury.cgpacalculator.MainActivity">
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/app_Title"
+    android:gravity="center"
+    android:textSize="20sp"
+    android:textColor="@color/newblue"
+    android:textStyle="bold"
+    android:padding="10dp"
+    />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:inputType="numberDecimal"
+            android:id="@+id/creditET"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:hint="Credit"
+            android:textColorHint="@color/newblue"
+            android:gravity="center"
+            android:textColor="@color/newblueforet"/>
+        <EditText
+            android:inputType="numberDecimal"
+            android:id="@+id/gpaET"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:hint="GPA"
+            android:textColorHint="@color/newblue"
+            android:gravity="center"
+            android:textColor="@color/newblueforet"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.5"
+            android:gravity="center"
+            android:text="CGPA ="
+            android:textSize="27sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/finalCGPATV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.5"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textSize="27sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3.5"
+            android:background="@drawable/buttonbg"
+            android:onClick="addButton"
+            android:text="Add"
+            android:padding="18dp"
+            android:textColor="#ffff" />
+    </LinearLayout>
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp">
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:text="Serial"
+        android:textSize="15sp"
+        android:textColor="@color/newblue"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:text="Credit(s)"
+        android:textSize="15sp"
+        android:textColor="@color/newblue"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:text="GPA"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:textColor="@color/newblue"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:text="Total"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:textColor="@color/newblue"/>
+</LinearLayout>
+    <ListView
+        android:id="@+id/gpaCalCalcutionList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+    </ListView>
+</LinearLayout>
